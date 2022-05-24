@@ -2,6 +2,8 @@ import express from 'express'
 const app = express()
 import dotenv from 'dotenv'
 dotenv.config()
+// Passes errors to middleware with no need for try/catch
+import 'express-async-errors' 
 
 // db and authenticateUser
 import connectDB from './db/connect.js'
